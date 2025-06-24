@@ -1,0 +1,48 @@
+{
+  "name": "binance-futures-bot",
+  "version": "1.0.0",
+  "description": "Automated Binance Futures Trading Bot with scheduled execution",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "advanced": "ts-node src/advanced-bot.ts",
+    "test-buy": "ts-node src/index.ts --test-buy",
+    "test-sell": "ts-node src/index.ts --test-sell",
+    "test-long": "ts-node src/advanced-bot.ts --test-long",
+    "test-short": "ts-node src/advanced-bot.ts --test-short",
+    "status": "ts-node src/index.ts --status",
+    "advanced-status": "ts-node src/advanced-bot.ts --status",
+    "test-connection": "ts-node src/test-connection.ts",
+    "test-telegram": "ts-node src/test-telegram.ts",
+    "get-group-id": "ts-node get-group-chat-id.ts",
+    "check-config": "ts-node check-telegram-config.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "binance",
+    "futures",
+    "trading",
+    "bot",
+    "cryptocurrency",
+    "btc"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "axios": "^1.6.0",
+    "binance": "^2.15.22",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "node-cron": "^4.1.1",
+    "technicalindicators": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
