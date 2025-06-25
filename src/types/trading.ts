@@ -33,5 +33,7 @@ export interface PositionInfo {
 export interface TradeSignal {
   action: 'BUY' | 'SELL';
   symbol: string;
-  timestamp: Date;
+  timestamp?: Date;
+  reason?: string;
+  confidence?: number;
 }

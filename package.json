@@ -18,6 +18,12 @@
     "test-telegram": "ts-node src/test-telegram.ts",
     "get-group-id": "ts-node get-group-chat-id.ts",
     "check-config": "ts-node check-telegram-config.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration",
+    "test:verbose": "jest --verbose",
     "clean": "rm -rf dist"
   },
   "keywords": [
@@ -41,7 +47,10 @@
     "technicalindicators": "^3.1.0"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.0.4",
+    "jest": "^30.0.3",
+    "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
